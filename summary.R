@@ -3,12 +3,6 @@ library(readr)
 
 washington <- read.csv("https://raw.githubusercontent.com/melaniewalsh/Neat-Datasets/main/us-prison-jail-rates-1990-WA.csv")
 
-# Average variables in current year
-avg_jail_2018 <- washington %>%
-  filter(year == 2018) %>%
-  summarise(mean = mean(total_jail_pop_rate)) %>%
-  pull(mean)
-
 avg_jail_2018_native <- washington %>%
   filter(year == 2018) %>%
   summarise(mean = mean(native_jail_pop_rate)) %>%
