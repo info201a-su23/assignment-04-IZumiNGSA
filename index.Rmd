@@ -5,14 +5,14 @@ date: "08/04/2023"
 output: html_document
 ---
 
+```{r summary, echo=FALSE, message=FALSE}
+source("summary.R")
+```
 
 ### Introduction
 
 The United States has the highest incarceration rate in the world. Disparities across different racial and ethnic groups in the US justice system have long been a subject of study and concern. Understanding these disparities is crucial to addressing the root causes of inequality in the system. The reason for selecting these variables is that they give us the data needed to analyze racial and ethnic disparities in incarceration rates in Washington. They allow us to examine the issue over time, between different groups, and across different regions in the state.
 
-```{r summary, echo=FALSE, message=FALSE}
-source("summary.R")
-```
 
 ### Summary Information
 
