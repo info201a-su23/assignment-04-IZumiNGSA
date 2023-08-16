@@ -5,19 +5,26 @@ date: "08/04/2023"
 output: html_document
 ---
 
+```{r setup, include=FALSE}
+library(knitr)
+library(tidyverse)
+library(dplyr)
+library(purrr)
+library(maps)
+```
+
 ### Introduction
 
 The United States has the highest incarceration rate in the world. Disparities across different racial and ethnic groups in the US justice system have long been a subject of study and concern. Understanding these disparities is crucial to addressing the root causes of inequality in the system. The reason for selecting these variables is that they give us the data needed to analyze racial and ethnic disparities in incarceration rates in Washington. They allow us to examine the issue over time, between different groups, and across different regions in the state.
 
+```{r summary, echo=FALSE, message=FALSE}
+source("summary.R")
+```
+
 ### Summary Information
 
-The resultant variables contain key statistics for different racial and ethnic groups in Washington's jails for the year 2018. The average jail population rate of native, latinx and appi are 2119, 329, and 140 in 2018. Moreover, the maximum jail population rate of native, latinx, appi are 50000, 3703 and 735.
+The resultant variables contain key statistics for different racial and ethnic groups in Washington's jails for the year 2018. The average jail population rate of native, latinx, and appi are `r avg_jail_2018_native` , `r avg_jail_2018_latinx` and `r avg_jail_2018_aapi` in 2018. Moreover, the maximum jail population rate of native, latix, aND appi are `r max_jail_rate_native` , `r max_jail_rate_latinx` and `r max_jail_rate_aapi`.
 
-These will likely be calculated using your DPLYR skills, answering questions such as: 
-
--   What is the average value of my variable across all the counties (in the current year)?
--   Where is my variable the highest / lowest?
--   How much has my variable change over the last N years?
 
 
 ### The Dataset
