@@ -11,3 +11,4 @@ ggplot(washington, aes(x = native_jail_pop_rate, y = native_prison_pop_rate)) +
        y = "Native Prison Population Rate",
        x = "Native Jail Population Rate") +
   xlim(0,10000)
+
