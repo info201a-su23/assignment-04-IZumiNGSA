@@ -13,7 +13,7 @@ washington <- washington %>%
 counties <- map_data("county", region = "washington")
 
 counties <- counties %>%
-  mutate(subregion = str_to_title(subregion) %>% paste0(" County"))
+    mutate(subregion = tools::toTitleCase(subregion) %>% paste0(" County"))
 
 merged_data <- left_join(counties, washington, by = c("subregion" = "county_name"))
 
