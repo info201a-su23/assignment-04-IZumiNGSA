@@ -16,7 +16,7 @@ source("summary.R")
 
 ### Summary Information
 
-The resultant variables contain key statistics for different racial and ethnic groups in Washington's jails for the year 2018. The average jail population rate of native, latinx, and appi are `r avg_jail_2018_native` , `r avg_jail_2018_latinx` and `r avg_jail_2018_aapi` in 2018. Moreover, the maximum jail population rate of native, latix, aND appi are `r max_jail_rate_native` , `r max_jail_rate_latinx` and `r max_jail_rate_aapi`.
+The resultant variables contain key statistics for different racial and ethnic groups in Washington's jails for the year 2018. The average jail population rate of native, latinx, and appi are `r avg_jail_2018_native` , `r avg_jail_2018_latinx` and `r avg_jail_2018_aapi` in 2018. Moreover, the maximum jail population rate of native, latinx, and appi are `r max_jail_rate_native` , `r max_jail_rate_latinx` and `r max_jail_rate_aapi`.
 
 
 
