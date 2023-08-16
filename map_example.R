@@ -3,6 +3,7 @@ library(mapdata)
 library(purrr)
 library(dplyr)
 library(maps)
+library(stringr)
 
 washington <- read.csv("https://raw.githubusercontent.com/melaniewalsh/Neat-Datasets/main/us-prison-jail-rates-1990-WA.csv")
 
